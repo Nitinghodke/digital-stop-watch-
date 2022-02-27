@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #f7f9fe;
+}
+
 .container {
   width: 80%;
   margin: auto;
   padding-top: 30px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -20,7 +25,7 @@
 }
 
 .bg {
-  background: #f7f9fe;
+  background: #2e86f8;
   margin-top: 30px;
 }
 #stopwatch {
@@ -97,10 +102,10 @@ h3 {
   position: relative;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
-.lap-data:hover{
-  background-color:#072344;
-  color:#f7f9fe;
-  width: 31%;
+.lap-data:hover {
+  background-color: #072344;
+  color: #f7f9fe;
+  cursor: pointer;
 }
 .icon {
   color: grey;
@@ -109,7 +114,7 @@ h3 {
   top: 5px;
   cursor: pointer;
 }
-.lap-data .icon:hover{
+.lap-data .icon:hover {
   color: red;
 }
 h4 {
@@ -127,7 +132,7 @@ h5 {
 button {
   background-color: lightgray;
   color: #072344;
-
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   border: none;
   border-radius: 24px;
   width: 90px;
@@ -148,14 +153,13 @@ button:hover {
 .red-dot {
   background-color: red;
   position: absolute;
-    z-index: 10;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    bottom: 50%;
-    right: 37px;
-    opacity: 0.5;
-
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 37px;
+  opacity: 0.5;
 }
 .green-dot {
   background-color: green;
@@ -166,7 +170,6 @@ button:hover {
   border-radius: 50%;
   top: 3%;
   left: 100px;
-
 }
 
 .blue-dot {
@@ -178,23 +181,19 @@ button:hover {
   border-radius: 50%;
   bottom: 10%;
   left: 50px;
-
-
 }
 .red-dot,
-.green-dot,.blue-dot{
+.green-dot,
+.blue-dot {
   border-radius: 50%;
 }
 
-
-
 .border {
   border: 4px dashed gray;
-  
 }
 
 @keyframes dash {
   to {
-      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
   }
 }
